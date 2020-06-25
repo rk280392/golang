@@ -6,6 +6,8 @@ import (
 	"log"
 	"os/exec"
 	"strings"
+	"database/sql"
+	_"github.com/go-sql-driver/mysql"
 )
 
 func getPeerServer(server interface{}) string {
@@ -35,5 +37,6 @@ func main() {
 	fmt.Println(speedtestUploadSpeed)
 	fmt.Println(myPublicIP)
 	fmt.Println(peerServer)
+
 
 }
